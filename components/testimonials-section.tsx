@@ -98,7 +98,15 @@ export function TestimonialsSection() {
             <p className="text-black/80 text-base md:text-lg mb-6">
               Junte-se a milhares de empresários que já transformaram seus negócios
             </p>
-            <button className="bg-black text-yellow-400 px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-900 transition-colors duration-300 shadow-2xl">
+            <button
+              onClick={() => {
+                const pricingSection = document.getElementById("pricing-section")
+                if (pricingSection) {
+                  pricingSection.scrollIntoView({ behavior: "smooth" })
+                }
+              }}
+              className="bg-black text-yellow-400 px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-900 transition-colors duration-300 shadow-2xl"
+            >
               QUERO MEU PANFLETO AGORA! 💰
             </button>
           </div>

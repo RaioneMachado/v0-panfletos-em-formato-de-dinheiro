@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button"
-
 export function FinalCta() {
   return (
     <section className="py-12 md:py-20 px-4 relative overflow-hidden">
@@ -27,18 +25,22 @@ export function FinalCta() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 md:px-8 py-3 md:py-4 text-sm md:text-lg w-full sm:w-auto"
+            <a
+              href="https://wa.me/5562993350204?text=Olá! Quero o PACOTE BÁSICO por R$ 19,90"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 md:px-8 py-3 md:py-4 text-sm md:text-lg w-full sm:w-auto rounded-md inline-flex items-center justify-center transition-colors"
             >
               💰 BÁSICO - R$ 19,90
-            </Button>
-            <Button
-              size="lg"
-              className="bg-green-500 hover:bg-green-600 text-white font-bold px-6 md:px-8 py-3 md:py-4 text-sm md:text-lg w-full sm:w-auto"
+            </a>
+            <a
+              href="https://wa.me/5562993350204?text=Olá! Quero o PACOTE PREMIUM por R$ 49,90"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 text-white font-bold px-6 md:px-8 py-3 md:py-4 text-sm md:text-lg w-full sm:w-auto rounded-md inline-flex items-center justify-center transition-colors"
             >
               ⭐ PREMIUM - R$ 49,90
-            </Button>
+            </a>
           </div>
         </div>
 
