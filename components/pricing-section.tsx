@@ -40,9 +40,14 @@ export function PricingSection() {
                   <span className="text-white">Entrega imediata</span>
                 </li>
               </ul>
-              <button className="w-full bg-black text-yellow-400 px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-900 transition-colors duration-300 shadow-2xl min-h-[80px] flex items-center justify-center">
+              <a
+                href="https://wa.me/5562993350204?text=Olá! Quero o PACOTE BÁSICO por R$ 19,90"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-black text-yellow-400 px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-900 transition-colors duration-300 shadow-2xl min-h-[80px] flex items-center justify-center"
+              >
                 QUERO MEU PACOTE BÁSICO 💰
-              </button>
+              </a>
             </CardContent>
           </Card>
 
@@ -86,9 +91,14 @@ export function PricingSection() {
                   </span>
                 </li>
               </ul>
-              <button className="w-full bg-black text-white px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-900 transition-colors duration-300 shadow-2xl min-h-[80px] flex items-center justify-center">
+              <a
+                href="https://wa.me/5562993350204?text=Olá! Quero o PACOTE PREMIUM por R$ 49,90"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-black text-white px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-900 transition-colors duration-300 shadow-2xl min-h-[80px] flex items-center justify-center"
+              >
                 QUERO O PACOTE PREMIUM 💰
-              </button>
+              </a>
             </CardContent>
           </Card>
         </div>
