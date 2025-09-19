@@ -2,6 +2,7 @@ import { CountdownTimer } from "@/components/countdown-timer"
 import { HeroSection } from "@/components/hero-section"
 import { PainSection } from "@/components/pain-section"
 import { SolutionSection } from "@/components/solution-section"
+import { EasyEditSection } from "@/components/easy-edit-section"
 import { PricingSection } from "@/components/pricing-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { FaqSection } from "@/components/faq-section"
@@ -14,6 +15,7 @@ export default function Home() {
       <HeroSection />
       <PainSection />
       <SolutionSection />
+      <EasyEditSection />
       <PricingSection />
       <TestimonialsSection />
       <FaqSection />

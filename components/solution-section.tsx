@@ -81,7 +81,7 @@ export function SolutionSection() {
               </div>
               <div className="relative">
                 <img
-                  src="/images/panfleto-dinheiro.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/VERSO%20%282%29-1zHL6LtEEAJMAd3ZigeiAhO82qvGST.png"
                   alt="Panfleto em formato de dinheiro"
                   className="w-full h-64 object-contain rounded-lg bg-white/5"
                 />

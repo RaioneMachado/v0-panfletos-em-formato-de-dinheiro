@@ -22,6 +22,21 @@ export function HeroSection() {
           ser ignorada.
         </p>
 
+        <div className="mb-8 md:mb-12">
+          <div className="flex justify-center mb-4">
+            <img
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/dinheiro-4CZDY82g4DGRcicNfTn926NcvY02Re.png"
+              alt="Empresário perdendo dinheiro"
+              className="w-64 md:w-80 h-auto"
+            />
+          </div>
+          <p className="text-lg md:text-xl font-bold text-red-400 mb-6">
+            NENHUM DINHEIRO PASSA DESPERCEBIDO!
+            <br />
+            TAMBÉM NÃO PASSARÁ DESPERCEBIDO COM O SEU PANFLETO
+          </p>
+        </div>
+
         <div className="flex justify-center items-center mb-8 md:mb-12 px-4">
           <button
             onClick={scrollToPricing}
