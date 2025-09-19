@@ -44,7 +44,7 @@ export function PricingSection() {
                 href="https://wa.me/5562993350204?text=Olá! Quero o PACOTE BÁSICO por R$ 19,90"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-black text-yellow-400 px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-900 transition-colors duration-300 shadow-2xl min-h-[80px] flex items-center justify-center"
+                className="w-full bg-green-800 text-white px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-green-900 transition-colors duration-300 shadow-2xl min-h-[80px] flex items-center justify-center animate-pulse"
               >
                 QUERO MEU PACOTE BÁSICO 💰
               </a>
@@ -95,7 +95,7 @@ export function PricingSection() {
                 href="https://wa.me/5562993350204?text=Olá! Quero o PACOTE PREMIUM por R$ 49,90"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full bg-black text-white px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-gray-900 transition-colors duration-300 shadow-2xl min-h-[80px] flex items-center justify-center"
+                className="w-full bg-green-800 text-white px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-green-900 transition-colors duration-300 shadow-2xl min-h-[80px] flex items-center justify-center animate-pulse"
               >
                 QUERO O PACOTE PREMIUM 💰
               </a>

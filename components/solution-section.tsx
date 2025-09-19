@@ -1,7 +1,16 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
 export function SolutionSection() {
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById("pricing-section")
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Background effects */}
@@ -141,6 +150,7 @@ export function SolutionSection() {
           <Button
             size="lg"
             className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-4 md:px-12 py-4 md:py-6 text-sm sm:text-base md:text-xl w-full sm:w-auto"
+            onClick={scrollToPricing}
           >
             <span className="block sm:hidden text-center leading-tight">
               🚀 QUERO TRANSFORMAR
