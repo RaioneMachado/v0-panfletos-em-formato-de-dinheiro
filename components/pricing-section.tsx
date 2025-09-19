@@ -14,7 +14,8 @@ export function PricingSection() {
           <Card className="border-2 border-blue-400/50 hover:border-blue-400 transition-colors bg-white/10 backdrop-blur-sm">
             <CardHeader className="text-center bg-blue-500/20">
               <CardTitle className="text-2xl text-blue-300">📄 PACOTE BÁSICO</CardTitle>
-              <div className="text-4xl font-bold text-blue-200 mt-4">R$ 19,90</div>
+              <div className="text-sm text-red-400 line-through">De R$ 39,90</div>
+              <div className="text-4xl font-bold text-blue-200 mt-2">R$ 19,90</div>
               <p className="text-blue-200">Você mesmo personaliza</p>
             </CardHeader>
             <CardContent className="p-6">
@@ -57,7 +58,8 @@ export function PricingSection() {
             </div>
             <CardHeader className="text-center bg-yellow-500/20">
               <CardTitle className="text-2xl text-yellow-300">⭐ PACOTE PREMIUM</CardTitle>
-              <div className="text-4xl font-bold text-yellow-200 mt-4">R$ 49,90</div>
+              <div className="text-sm text-red-400 line-through">De R$ 97,00</div>
+              <div className="text-4xl font-bold text-yellow-200 mt-2">R$ 49,90</div>
               <p className="text-yellow-200">Já personalizado para você</p>
             </CardHeader>
             <CardContent className="p-6">
