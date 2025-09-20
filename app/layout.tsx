@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono"
 import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import Script from "next/script"
+import FacebookPixel from '@/components/FacebookPixel'; // ✅ ADICIONE ESTA LINHA
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -19,11 +20,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR"> {/* ✅ MUDE "en" PARA "pt-BR" */}
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
         <Analytics />
-        <Script src="/facebook-pixel.html" strategy="afterInteractive" />
+        <FacebookPixel /> {/* ✅ SUBSTITUA A LINHA DO SCRIPT POR ESTA */}
       </body>
     </html>
   )
