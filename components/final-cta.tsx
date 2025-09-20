@@ -1,4 +1,18 @@
+"use client"; // Adicione esta linha no topo
+
 export function FinalCta() {
+  // Função para rastrear cliques
+  const trackWhatsAppClick = (packageType: string, price: string) => {
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead', {
+        content_name: `${packageType} WhatsApp Click`,
+        content_category: 'Conversion',
+        value: parseFloat(price.replace('R$ ', '').replace(',', '.')),
+        currency: 'BRL'
+      });
+    }
+  };
+
   return (
     <section className="py-12 md:py-20 px-4 relative overflow-hidden">
       {/* Background effects matching testimonials */}
@@ -29,6 +43,7 @@ export function FinalCta() {
               href="https://wa.me/5562993350204?text=Olá! Quero o PACOTE BÁSICO por R$ 19,90"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('Básico', '19,90')}
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold px-6 md:px-8 py-3 md:py-4 text-sm md:text-lg w-full sm:w-auto rounded-md inline-flex items-center justify-center transition-colors"
             >
               💰 BÁSICO - R$ 19,90
@@ -37,6 +52,7 @@ export function FinalCta() {
               href="https://wa.me/5562993350204?text=Olá! Quero o PACOTE PREMIUM por R$ 49,90"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsAppClick('Premium', '49,90')}
               className="bg-green-500 hover:bg-green-600 text-white font-bold px-6 md:px-8 py-3 md:py-4 text-sm md:text-lg w-full sm:w-auto rounded-md inline-flex items-center justify-center transition-colors"
             >
               ⭐ PREMIUM - R$ 49,90
