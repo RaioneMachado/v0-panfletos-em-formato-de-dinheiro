@@ -1,6 +1,20 @@
+"use client"; // Adicione esta linha no topo
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export function PricingSection() {
+  // Função para rastrear cliques ( mesma do FinalCta )
+  const trackWhatsAppClick = (packageType: string, price: string) => {
+    if (typeof fbq !== 'undefined') {
+      fbq('track', 'Lead', {
+        content_name: `${packageType} WhatsApp Click`,
+        content_category: 'Conversion',
+        value: parseFloat(price.replace('R$ ', '').replace(',', '.')),
+        currency: 'BRL'
+      });
+    }
+  };
+
   return (
     <section id="pricing-section" className="py-20 px-4 gradient-bg-hero text-white">
       <div className="max-w-6xl mx-auto">
@@ -45,6 +59,7 @@ export function PricingSection() {
                 href="https://wa.me/5562993350204?text=Olá! Quero o PACOTE BÁSICO por R$ 19,90"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick('Básico', '19,90')} // ← Adicione esta linha
                 className="w-full bg-green-800 text-white px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-green-900 transition-colors duration-300 shadow-2xl min-h-[80px] flex items-center justify-center animate-pulse"
               >
                 QUERO MEU PACOTE BÁSICO 💰
@@ -97,6 +112,7 @@ export function PricingSection() {
                 href="https://wa.me/5562993350204?text=Olá! Quero o PACOTE PREMIUM por R$ 49,90"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackWhatsAppClick('Premium', '49,90')} // ← Adicione esta linha
                 className="w-full bg-green-800 text-white px-8 md:px-12 py-3 md:py-4 rounded-full font-bold text-base md:text-lg hover:bg-green-900 transition-colors duration-300 shadow-2xl min-h-[80px] flex items-center justify-center animate-pulse"
               >
                 QUERO O PACOTE PREMIUM 💰
