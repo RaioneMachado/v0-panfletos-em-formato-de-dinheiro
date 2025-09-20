@@ -14,7 +14,7 @@ export default function FacebookPixel() {
           t.src=v;s=b.getElementsByTagName(e)[0];
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', 'EAAQTKZChUE1sBPcafMeztMhsLEsFcGtcfBWeHBPcMOZC69zJYwTtf8LZAgEZBsQMqe6IqXEUn752BaCr7rIly7sc1wWbv5F98jj7UMRVr8wePKsZCtGihNGN9EzJb77UjLkmXM4celqvXYiOZAWsjfERvGPt7DbxmvADk4CwE6DELXdBRZAOuYkd8pZCiihYgpijygZDZD');
+          fbq('init', '797715479423433');  // ✅ PIXEL ID CORRETO
           fbq('track', 'PageView');
         `}
       </Script>
@@ -23,7 +23,7 @@ export default function FacebookPixel() {
           height="1"
           width="1"
           style={{ display: "none" }}
-          src="https://www.facebook.com/tr?id=EAAQTKZChUE1sBPcafMeztMhsLEsFcGtcfBWeHBPcMOZC69zJYwTtf8LZAgEZBsQMqe6IqXEUn752BaCr7rIly7sc1wWbv5F98jj7UMRVr8wePKsZCtGihNGN9EzJb77UjLkmXM4celqvXYiOZAWsjfERvGPt7DbxmvADk4CwE6DELXdBRZAOuYkd8pZCiihYgpijygZDZD&ev=PageView&noscript=1"
+          src="https://www.facebook.com/tr?id=797715479423433&ev=PageView&noscript=1"  // ✅ PIXEL ID CORRETO
         />
       </noscript>
     </>
